@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.container-con{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.cartTitle{
+    font-family: 'Montserrat';
+    font-size: 7px;
+    width: auto;
+    height: 30px;
+    overflow: hidden;
+}
+
+.cartPrice{
+    font-family: 'Montserrat';
+    font-size: 10px;
+    font-weight: bold;
+    width: auto;
+    height: 10px;
+ 
+}
+
+.cartCity{
+    font-family: 'Montserrat';
+    font-size: 8px;
+    font-weight: bold;
+    width: auto;
+    height: 10px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+
+p{
+    margin-bottom: 2px;
+
+}

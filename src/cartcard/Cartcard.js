@@ -1,0 +1,114 @@
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Box, Container } from '@mui/system';
+import c1 from '../assets/c1.jpg'
+import Grid from '@mui/material/Grid';
+import c2 from '../assets/c2.jpg'
+import './Cartcard.css'
+import "swiper/css";
+import "swiper/css/navigation";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper";
+const CartCard = () => {
+
+    
+    return ( 
+        <Container className='container-con'>
+            <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
+                <SwiperSlide>
+                <Box sx={{display:'flex',padding:3}}>
+                    <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
+                                <p className='cartPrice'>Rp.30.000</p>
+                                <p className='cartCity'>Kota Surabaya</p>
+                            </CardContent>
+                            <CardActions>
+                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+
+                <Grid>
+                    <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
+                                <p className='cartPrice'>Rp.30.000</p>
+                                <p className='cartCity'>Kota Surabaya</p>
+                            </CardContent>
+                            <CardActions>
+                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                
+                </Box>
+                </SwiperSlide>
+                <SwiperSlide>
+                <Box sx={{display:'flex',padding:3}}>
+                <Grid>
+                    <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
+                                <p className='cartPrice'>Rp.30.000</p>
+                                <p className='cartCity'>Kota Surabaya</p>
+                            </CardContent>
+                            <CardActions>
+                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+
+                <Grid>
+                    <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
+                                <p className='cartPrice'>Rp.30.000</p>
+                                <p className='cartCity'>Kota Surabaya</p>
+                            </CardContent>
+                            <CardActions>
+                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                
+                </Box>
+                </SwiperSlide>
+            </Swiper>
+            
+        </Container>
+     );
+}
+ 
+export default CartCard;
