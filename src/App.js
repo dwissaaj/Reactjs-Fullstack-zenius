@@ -10,15 +10,16 @@ import Brand from './brand/Brand';
 import ButtonFam from './buttonfam/ButtonFam';
 import FooterLink from './footerlink/FooterLink';
 import { Divider } from '@mui/material';
-import Testing from './Testing';
+import FloatinBtn from './FloatinBtn';
+import Fab from '@mui/material/Fab';
 import { Button } from "@mui/material";
-import './Testing.css'
 function App() {
   return (
     <div className="App">
         <Helmet>
         <title>Tokopedia</title>
       </Helmet>
+      <FloatinBtn/>
       <Navigation/>
       <Search/>
       <Banner/>
@@ -27,7 +28,7 @@ function App() {
       <ButtonFam/>
       <Divider/>
       <FooterLink/>
-      <Testing/>
+      
     </div>
   );
 }

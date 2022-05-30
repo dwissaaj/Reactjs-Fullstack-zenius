@@ -65,7 +65,7 @@ const Search = () => {
         setOpen2(true);       
     }
     const handleClose2 = () => {
-        setOpen(false);
+        setOpen2(false);
     };
     
     return ( 

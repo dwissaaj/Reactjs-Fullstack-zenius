@@ -1,0 +1,21 @@
+.Fab{
+    right: 0;
+    position: fixed !important;
+    bottom: 0;
+    margin: 10px !important;
+  }
+  
+.divclass{
+    height: 900px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+  }
+
+.textClass{
+  display: block !important;
+  margin: 10px;
+}
+.dialogcontent{
+  height: 100%;
+}
