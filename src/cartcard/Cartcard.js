@@ -11,10 +11,26 @@ import "swiper/css";
 import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
-const CartCard = () => {
+import { useState } from 'react';
 
     
+
+const CartCard = () => {
+
+    const [cart,setCart] = useState(0)
+    const increment = () => {
+          setCart(cart + 1)
+    }
+    const [product,setProducts] = useState([
+        {id:1,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.90000',city:'Surabaya'},
+        {id:2,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.80000',city:'Surabaya'},
+        {id:3,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.70000',city:'Surabaya'},
+        {id:4,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.60000',city:'Surabaya'},
+        {id:5,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.90000',city:'Surabaya'},
+
+    ])
     return ( 
+        <>
         <Container className='container-con'>
             <Swiper navigation={true} modules={[Navigation]} className="mySwiper">
                 <SwiperSlide>
@@ -28,12 +44,16 @@ const CartCard = () => {
                             image={c1}
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
-                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
-                                <p className='cartPrice'>Rp.30.000</p>
-                                <p className='cartCity'>Kota Surabaya</p>
+                                
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
                             </CardContent>
                             <CardActions>
-                            <Button variant="contained" size="small" >Tambahkan</Button>
+                                <Button variant="contained" size="small" onClick={increment}>Tambahkan</Button>
+                                <p className='cartId'>{cart}</p>
                             </CardActions>
                         </CardActionArea>
                     </Card>
@@ -53,7 +73,8 @@ const CartCard = () => {
                                 <p className='cartCity'>Kota Surabaya</p>
                             </CardContent>
                             <CardActions>
-                            <Button variant="contained" size="small" >Tambahkan</Button>
+                                <Button variant="contained" size="small" onClick={increment}>Tambahkan</Button>
+                                
                             </CardActions>
                         </CardActionArea>
                     </Card>
@@ -108,6 +129,9 @@ const CartCard = () => {
             </Swiper>
             
         </Container>
+        
+        </>
+        
      );
 }
  

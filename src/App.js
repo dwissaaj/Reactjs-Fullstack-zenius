@@ -27,6 +27,7 @@ function App() {
       <ButtonFam/>
       <Divider/>
       <FooterLink/>
+      <Testing/>
     </div>
   );
 }
