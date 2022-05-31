@@ -19,7 +19,7 @@ function App() {
         <Helmet>
         <title>Tokopedia</title>
       </Helmet>
-      <FloatinBtn/>
+      
       <Navigation/>
       <Search/>
       <Banner/>

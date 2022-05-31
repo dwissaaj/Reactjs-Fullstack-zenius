@@ -87,7 +87,7 @@ const Search = () => {
                     <div className="divIcon">
                         <div className="divIconCart">
                             <BsFillCartFill/>
-                            
+                            <p>0</p>
                         </div>
                         <BsBellFill/>
                         <RiMessage2Fill/>
