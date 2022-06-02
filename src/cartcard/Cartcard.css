@@ -2,6 +2,7 @@
 .container-con{
     margin-top: 15px;
     margin-bottom: 15px;
+    z-index: -1 !important;
 }
 .cartTitle{
     font-family: 'Montserrat';
@@ -40,4 +41,19 @@ p{
     position: fixed;
     background: #d51515;
     width: 10px;
+}
+
+.CartClass{
+    right: 0;
+    position: fixed !important;
+    bottom: 0;
+    margin: 10px !important;
+    z-index: 100 !important;
+    background-color: blueviolet !important;
+    margin-right: 130px !important;
+}
+
+.pClass{
+    color: white;
+    font-weight: bold;
 }

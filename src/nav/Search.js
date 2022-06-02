@@ -11,6 +11,7 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Button } from "@mui/material";
 import React, { useState } from 'react';
+import CartCard from "../cartcard/Cartcard";
 const StyleLogin = {
     fontFamily : 'Segoe UI',
     fontSize: '15px',
@@ -62,10 +63,25 @@ const Search = () => {
         event.preventDefault();
         console.log(email);
         console.log(name);
-        setOpen2(true);       
+        if(email.includes("@gmail")) {
+            setOpen2(true); 
+        } else {
+            wrongEmail();
+        }
+              
     }
     const handleClose2 = () => {
         setOpen2(false);
+    };
+
+    const [open3, setOpen3] = React.useState(false);
+
+    const wrongEmail = () => {
+        setOpen3(true);
+    }
+
+    const correctEmail = () => {
+        setOpen3(false);
     };
     
     return ( 
@@ -87,7 +103,6 @@ const Search = () => {
                     <div className="divIcon">
                         <div className="divIconCart">
                             <BsFillCartFill/>
-                            <p>0</p>
                         </div>
                         <BsBellFill/>
                         <RiMessage2Fill/>
@@ -119,7 +134,12 @@ const Search = () => {
                                     <Button onClick={handleClose2}>Keluar</Button>
                                 </Dialog>
                             </div>
-                            
+                            <div>
+                                <Dialog open={open3} onClose={handleClose} fullWidth maxWidth="xs">
+                                    <DialogContentText>Tolong Gunakan Gmail</DialogContentText>
+                                    <Button onClick={correctEmail}>Keluar</Button>
+                                </Dialog>
+                            </div>
                             </DialogActions>
                         </Dialog>
                     </div>

@@ -12,8 +12,8 @@ import "swiper/css/navigation";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper";
 import { useState } from 'react';
-
-    
+import Fab from '@mui/material/Fab';
+import { BsFillCartFill } from "react-icons/bs";
 
 const CartCard = () => {
 
@@ -21,6 +21,7 @@ const CartCard = () => {
     const increment = () => {
           setCart(cart + 1)
     }
+
     const [product,setProducts] = useState([
         {id:1,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.90000',city:'Surabaya'},
         {id:2,title:'Lorem ipsum dolor sit amet, consectetur adipiscing elit,',price:'Rp.80000',city:'Surabaya'},
@@ -44,16 +45,14 @@ const CartCard = () => {
                             image={c1}
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
-                                
                                 <div className='divCart'>
                                     <p className='cartTitle'>{product[0].title}</p>
                                     <p className='cartPrice'>{product[0].price}</p>
                                     <p className='cartCity'>{product[0].city}</p>
                                 </div>
                             </CardContent>
-                            <CardActions>
-                                <Button variant="contained" size="small" onClick={increment}>Tambahkan</Button>
-                                <p className='cartId'>{cart}</p>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
                             </CardActions>
                         </CardActionArea>
                     </Card>
@@ -68,13 +67,14 @@ const CartCard = () => {
                             image={c1}
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
-                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
-                                <p className='cartPrice'>Rp.30.000</p>
-                                <p className='cartCity'>Kota Surabaya</p>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
                             </CardContent>
-                            <CardActions>
-                                <Button variant="contained" size="small" onClick={increment}>Tambahkan</Button>
-                                
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
                             </CardActions>
                         </CardActionArea>
                     </Card>
@@ -129,7 +129,12 @@ const CartCard = () => {
             </Swiper>
             
         </Container>
-        
+        <div>
+        <Fab className='CartClass' variant="outlined" size="small">
+            <BsFillCartFill/>
+            <p className='pClass'>{cart}</p>
+        </Fab>
+        </div>
         </>
         
      );

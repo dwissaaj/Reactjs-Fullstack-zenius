@@ -3,10 +3,11 @@
     position: fixed !important;
     bottom: 0;
     margin: 10px !important;
-  }
+    z-index: 100 !important;
+}
   
 .divclass{
-    height: 900px;
+    height: 100%;
     width: 100%;
     position: fixed;
     left: 0;

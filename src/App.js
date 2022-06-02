@@ -13,22 +13,24 @@ import { Divider } from '@mui/material';
 import FloatinBtn from './FloatinBtn';
 import Fab from '@mui/material/Fab';
 import { Button } from "@mui/material";
-function App() {
+function App(props) {
+
+
+
   return (
     <div className="App">
-        <Helmet>
+      <Helmet>
         <title>Tokopedia</title>
       </Helmet>
-      
       <Navigation/>
-      <Search/>
+      <Search  />
       <Banner/>
-      <CartCard/>
+      <CartCard />
       <Brand/>
+      <FloatinBtn/>
       <ButtonFam/>
       <Divider/>
       <FooterLink/>
-      
     </div>
   );
 }

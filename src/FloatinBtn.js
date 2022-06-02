@@ -38,7 +38,7 @@ const FloatinBtn = () => {
         setOpen2(false);
     };
     return ( 
-        <div className='divclass'>
+            <>
             <Fab className='Fab' variant="extended" size="small" color="primary" onClick={handleClickLogin}>Ada Diskon</Fab>
             <Dialog maxWidth="lg" fullWidth open={open} onClose={handleClose}>
                             <DialogContentText>Dapatkan Penawaran Menarik Dari Kami</DialogContentText>
@@ -93,7 +93,7 @@ const FloatinBtn = () => {
                             
                             </DialogActions>
                         </Dialog>
-        </div>
+                        </>
      );
 }
  
