@@ -11,7 +11,9 @@ import DialogContentText from '@mui/material/DialogContentText';
 import DialogTitle from '@mui/material/DialogTitle';
 import { Button } from "@mui/material";
 import React, { useState } from 'react';
+import { AiFillAccountBook } from "react-icons/ai";
 import CartCard from "../cartcard/Cartcard";
+import { Route } from "react-router-dom";
 const StyleLogin = {
     fontFamily : 'Segoe UI',
     fontSize: '15px',
@@ -60,11 +62,13 @@ const Search = () => {
 
     const [open2, setOpen2] = React.useState(false);
     const handleSubmit = (event) => {
-        event.preventDefault();
         console.log(email);
         console.log(name);
-        if(email.includes("@gmail")) {
-            setOpen2(true); 
+        if(email.includes("@gmail") && name.trim().length !== 0) {
+            setOpen2(true);
+            loginHide();
+            signHide();
+            accountHide();
         } else {
             wrongEmail();
         }
@@ -84,6 +88,16 @@ const Search = () => {
         setOpen3(false);
     };
     
+    //FOR LOGIN HIDE AFTER REFRESH
+    const [loginShow, setLoginShow] = React.useState(true)
+    const loginHide = () => setLoginShow(false)
+
+    //FOR LOGIN HIDE AFTER REFRESH
+    const [signShow, setSignShow] = React.useState(true)
+    const signHide = () => setSignShow(false)
+
+    const [accountShow, SetaccountShow] = React.useState(false)
+    const accountHide = () => SetaccountShow(true)
     return ( 
         <Container fluid className="mt-3 " >
             <Row className="justify-content-between d-flex border-bottom">
@@ -110,8 +124,17 @@ const Search = () => {
                 </Col>
                 <Col>
                     <div>
-                        <button style={StyleLogin} >Login</button>
-                        <button style={StyleSign} onClick={handleClickLogin}>Daftar</button>
+                        <div className="divLandingPage">
+                            {loginShow ? <button style={StyleLogin} >Login</button> : null}
+                            {signShow ? <button style={StyleSign} onClick={handleClickLogin}>Daftar</button> : null}  
+                        </div >
+
+                        { accountShow ? 
+                        <div className="divAccount">
+                            <AiFillAccountBook/>
+                            <p>{name}</p> 
+                        </div> 
+                        : null}
                             <Dialog fullWidth maxWidth="sm" open={open} onClose={handleClose}>
                             <DialogTitle>Login Form</DialogTitle>
                             <DialogContent>
@@ -136,7 +159,7 @@ const Search = () => {
                             </div>
                             <div>
                                 <Dialog open={open3} onClose={handleClose} fullWidth maxWidth="xs">
-                                    <DialogContentText>Tolong Gunakan Gmail</DialogContentText>
+                                    <DialogContentText>Tolong Gunakan Gmail dan Masukkan Nama</DialogContentText>
                                     <Button onClick={correctEmail}>Keluar</Button>
                                 </Dialog>
                             </div>

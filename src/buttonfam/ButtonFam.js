@@ -1,6 +1,5 @@
 import { Button } from "@mui/material";
 import { Container } from "@mui/system";
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Link } from 'react-router-dom';
 import "swiper/css/pagination";
 import './ButtonFam.css'

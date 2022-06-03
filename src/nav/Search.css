@@ -41,3 +41,14 @@
     border-radius: 7px;
     margin-left: 13px;
 }
+.divLandingPage{
+    display: flex;
+
+}
+
+.divAccount{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: -5px;
+}

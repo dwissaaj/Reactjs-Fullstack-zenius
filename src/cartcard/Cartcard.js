@@ -78,13 +78,96 @@ const CartCard = () => {
                         </CardActionArea>
                     </Card>
                 </Grid>
-                
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c1}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
                 </Box>
                 </SwiperSlide>
                 <SwiperSlide>
                 <Box sx={{display:'flex',padding:3}}>
                 <Grid>
-                    <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:2}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -92,19 +175,20 @@ const CartCard = () => {
                             image={c2}
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
-                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
-                                <p className='cartPrice'>Rp.30.000</p>
-                                <p className='cartCity'>Kota Surabaya</p>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
                             </CardContent>
-                            <CardActions>
-                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
                             </CardActions>
                         </CardActionArea>
                     </Card>
                 </Grid>
-
                 <Grid>
-                    <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:2}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -112,12 +196,98 @@ const CartCard = () => {
                             image={c2}
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
-                                <p className='cartTitle'>Speaker Keren dari Xiaomi yang mana bisa dapat banya</p>
-                                <p className='cartPrice'>Rp.30.000</p>
-                                <p className='cartCity'>Kota Surabaya</p>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
                             </CardContent>
-                            <CardActions>
-                            <Button variant="contained" size="small" >Tambahkan</Button>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
+                            </CardActions>
+                        </CardActionArea>
+                    </Card>
+                </Grid>
+                <Grid>
+                        <Card sx={{width:120,marginRight:2}} >
+                        <CardActionArea>
+                            <CardMedia
+                            component="img"
+                            heigh="40"
+                            image={c2}
+                            />
+                            <CardContent sx={{ p: "5px", mb:"2px" }}>
+                                <div className='divCart'>
+                                    <p className='cartTitle'>{product[0].title}</p>
+                                    <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartCity'>{product[0].city}</p>
+                                </div>
+                            </CardContent>
+                            <CardActions style={{justifyContent: 'center'}}>
+                                <Button variant="contained" size="small" onClick={increment}>Buy Now</Button>
                             </CardActions>
                         </CardActionArea>
                     </Card>
