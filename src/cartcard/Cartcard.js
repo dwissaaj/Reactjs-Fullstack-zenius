@@ -16,7 +16,6 @@ import Fab from '@mui/material/Fab';
 import { BsFillCartFill } from "react-icons/bs";
 
 const CartCard = () => {
-
     const [cart,setCart] = useState(0)
     const increment = () => {
           setCart(cart + 1)
