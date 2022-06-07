@@ -13,7 +13,12 @@ import { Divider } from '@mui/material';
 import FloatinBtn from './FloatinBtn';
 import Fab from '@mui/material/Fab';
 import { Button } from "@mui/material";
+import PublicApi from './useFetch/PublicApi';
+import Testing from './useFetch/Testing';
+import FetchTest from './useFetch/FetchTest'
+
 function App(props) {
+
 
 
 
@@ -31,6 +36,7 @@ function App(props) {
       <ButtonFam/>
       <Divider/>
       <FooterLink/>
+      <FetchTest/>
     </div>
   );
 }

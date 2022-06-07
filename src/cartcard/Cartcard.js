@@ -36,7 +36,7 @@ const CartCard = () => {
                 <SwiperSlide>
                 <Box sx={{display:'flex',padding:3}}>
                     <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -58,7 +58,7 @@ const CartCard = () => {
                 </Grid>
 
                 <Grid>
-                    <Card sx={{width:120,marginRight:2}} >
+                    <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -79,7 +79,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -100,7 +100,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -121,7 +121,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -142,7 +142,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -167,7 +167,7 @@ const CartCard = () => {
                 <SwiperSlide>
                 <Box sx={{display:'flex',padding:3}}>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -188,7 +188,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -209,7 +209,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -230,7 +230,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -251,7 +251,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
@@ -260,8 +260,8 @@ const CartCard = () => {
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
                                 <div className='divCart'>
-                                    <p className='cartTitle'>{product[0].title}</p>
                                     <p className='cartPrice'>{product[0].price}</p>
+                                    <p className='cartTitle'>{product[0].title}</p>
                                     <p className='cartCity'>{product[0].city}</p>
                                 </div>
                             </CardContent>
@@ -272,7 +272,7 @@ const CartCard = () => {
                     </Card>
                 </Grid>
                 <Grid>
-                        <Card sx={{width:120,marginRight:2}} >
+                        <Card sx={{width:120,marginRight:5}} >
                         <CardActionArea>
                             <CardMedia
                             component="img"
