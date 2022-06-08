@@ -6,6 +6,7 @@ const PublicApi = () => {
         fetch('https://jsonplaceholder.typicode.com/posts')
         .then((response) => response.json())
         .then((data) => setPosts(data))
+        .then(console.log(posts))
         .catch((err) => {
             
 

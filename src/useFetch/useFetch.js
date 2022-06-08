@@ -4,16 +4,14 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 const UseFetch = (url) => {
     const [data,setData] = useState([])
-    const [error,setError] = useState([])
+    const [error,setError] = useState(null)
     const [loading,setLoading] = useState(true)
     useEffect(() => {
         const fetchData = async () => {
             setLoading(true)
-
             try {
-                const res = await axios.get(url)
-                    
-                    /*,{
+                const res = await fetch(url)
+                /*{ 
                     headers : {
                         Authorization: 
                         'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MywiaWF0IjoxNjU0NTA5MDE1LCJleHAiOjE2NTcxMDEwMTV9.HOGhkG--nRYbPQKmOsNo75VAOKQydu1kw8o8MncdhdE'

@@ -14,7 +14,7 @@ import FloatinBtn from './FloatinBtn';
 import Fab from '@mui/material/Fab';
 import { Button } from "@mui/material";
 import PublicApi from './useFetch/PublicApi';
-import Testing from './useFetch/Testing';
+import CallApi from './useFetch/CallApi';
 import FetchTest from './useFetch/FetchTest'
 
 function App(props) {
@@ -27,16 +27,17 @@ function App(props) {
       <Helmet>
         <title>Tokopedia</title>
       </Helmet>
-      <Navigation/>
+      <CartCard />
+      {/* <Navigation/>
       <Search  />
       <Banner/>
-      <CartCard />
+      
       <Brand/>
       <FloatinBtn/>
       <ButtonFam/>
       <Divider/>
-      <FooterLink/>
-      <FetchTest/>
+      <FooterLink/> */}
+      <CallApi/>
     </div>
   );
 }
