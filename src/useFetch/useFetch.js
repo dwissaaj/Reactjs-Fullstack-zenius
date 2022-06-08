@@ -4,7 +4,7 @@ import {useEffect,useState} from 'react';
 import axios from 'axios';
 const UseFetch = (url) => {
     const [data,setData] = useState([])
-    const [error,setError] = useState(null)
+    const [error,setError] = useState(null) //yg bener ini bngst
     const [loading,setLoading] = useState(true)
     useEffect(() => {
         const fetchData = async () => {

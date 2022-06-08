@@ -28,7 +28,7 @@ function App(props) {
         <title>Tokopedia</title>
       </Helmet>
       <CartCard />
-      {/* <Navigation/>
+      <Navigation/>
       <Search  />
       <Banner/>
       
@@ -36,7 +36,7 @@ function App(props) {
       <FloatinBtn/>
       <ButtonFam/>
       <Divider/>
-      <FooterLink/> */}
+      <FooterLink/>
       <CallApi/>
     </div>
   );

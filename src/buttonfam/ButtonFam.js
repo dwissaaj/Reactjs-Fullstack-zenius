@@ -17,7 +17,7 @@ const ButtonFam = () => {
             fetch('http://localhost:1337/api/button-links/')
             .then((response) => response.json())
             .then((data) => setButton(data))
-            .then(console.log("Data success"))
+            /*.then(console.log("Data success")) */
             .catch((err) => { 
                 console.log(err)
                 

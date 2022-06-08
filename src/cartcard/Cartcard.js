@@ -104,9 +104,12 @@ const CartCard = () => {
                             />
                             <CardContent sx={{ p: "5px", mb:"2px" }}>
                                 <div className='divCart'>
-                                    <p className='cartTitle'>{product[0].title}</p>
-                                    <p className='cartPrice'>{product[0].price}</p>
-                                    <p className='cartCity'>{product[0].city}</p>
+                                    {
+                                        
+                                    }
+                                    <p className='cartTitle'>{product[1].title}</p>
+                                    <p className='cartPrice'>{product[2].price}</p>
+                                    <p className='cartCity'>{product[3].city}</p>
                                 </div>
                             </CardContent>
                             <CardActions style={{justifyContent: 'center'}}>
