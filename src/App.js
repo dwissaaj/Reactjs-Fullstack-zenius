@@ -18,26 +18,21 @@ import CallApi from './useFetch/CallApi';
 import FetchTest from './useFetch/FetchTest'
 
 function App(props) {
-
-
-
-
   return (
     <div className="App">
       <Helmet>
         <title>Tokopedia</title>
       </Helmet>
-      <CartCard />
+
       <Navigation/>
       <Search  />
       <Banner/>
-      
+      <CartCard />
       <Brand/>
       <FloatinBtn/>
       <ButtonFam/>
       <Divider/>
       <FooterLink/>
-      <CallApi/>
     </div>
   );
 }
